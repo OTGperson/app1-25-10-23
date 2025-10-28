@@ -3,6 +3,9 @@ server:
 spring:
   application:
     name: backend
+  data:
+    redis:
+      password: sbsst123414
   profiles:
     active: dev
     include: secret
