@@ -1,6 +1,12 @@
 spring:
   autoconfigure:
     exclude:
+  data:
+    redis:
+      host: ${custom.prod.redis.host}
+      port: ${custom.prod.redis.port}
+      username: ${custom.prod.redis.username}
+      password: ${custom.prod.redis.password}
   datasource:
     url: jdbc:postgresql://otg-db-1.internal:5432/app_2025_10_24_prod
     username: postgres
